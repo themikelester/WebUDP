@@ -12,7 +12,7 @@ RUN apt-get -yqq update
 RUN apt-get -yqq --allow-downgrades install libssl1.0.0=1.0.2g-1ubuntu4.15 libssl-dev=1.0.2g-1ubuntu4.15
 
 # Download and build webudp
-RUN git clone https://github.com/seemk/WebUDP.git /opt/webudp
+RUN git clone https://github.com/themikelester/WebUDP.git /opt/webudp
 RUN mkdir /opt/webudp/build
 WORKDIR /opt/webudp/build
 RUN cmake ..
